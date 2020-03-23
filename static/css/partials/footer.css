@@ -1,0 +1,22 @@
+footer {
+  background: var(--black);
+}
+
+footer .container {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  border-top: 1px solid #55537B;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+footer .brand p {
+  color: var(--light-gray);
+  padding-top: 5px;
+}
+
+footer .contact p {
+  color: var(--white);
+  margin-bottom: 5px;;
+}
