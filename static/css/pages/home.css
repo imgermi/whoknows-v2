@@ -6,14 +6,3 @@
   padding: 230px 0 300px;
   text-align: center;
 }
-  .home-hero_title {
-    color: var(--white);
-    margin-bottom: 25px;
-  }
-    .home-hero_title span {
-      color: var(--red);
-    }
-  .home-hero_sub {
-    color: var(--light-gray);
-    font-weight: 400;
-  }

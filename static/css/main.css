@@ -2,24 +2,20 @@
 
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap');
 
+@import "colors.css";
+@import "type.css";
 @import "pages/home.css";
-
 @import "partials/header.css";
 @import "partials/footer.css";
-
-:root {
-	--black: #27203F;
-	--dark-gray: #88829A;
-	--light-gray: #A59EBC;
-	--white: #F7F4FD;
-	--red: #F43072;
-	--orange: #FF7B62;
-}
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+.text-center {
+	text-align: center;
 }
   
 body {
@@ -37,44 +33,9 @@ body {
 	padding: 0 15px;
 }
 
-.text-sm {
-	font-size: 0.875em;
-	line-height: 140%;
-}
-
-.text-base {
-	font-size: 1em;
-	line-height: 140%;
-}
-
-.text-lg {
-	font-size: 1.25em;
-	line-height: 130%;
-}
-
-.text-xl {
-	font-size: 1.563em;
-	line-height: 130%;
-}
-
-.text-2xl {
-	font-size: 1.953em;
-	line-height: 130%;
-}
-
-.text-3xl {
-	font-size: 2.441em;
-	line-height: 120%;
-}
-
-.text-4xl {
-	font-size: 3.052em;
-	line-height: 120%;
-}
-
-.text-5xl {
-	font-size: 3.815em;
-	line-height: 120%;
+.band {
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 .btn {
@@ -99,3 +60,13 @@ body {
 		background: var(--red);
 		color: var(--white);
 	}
+
+.btn-link {
+	text-decoration: underline;
+	font-weight: 700;
+	color: var(--red);
+	transition: all 200ms ease-in
+}
+.btn-link:hover {
+	color: var(--dark-gray)
+}

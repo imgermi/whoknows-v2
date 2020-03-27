@@ -1,0 +1,40 @@
+:root {
+	--black: #27203F;
+	--dark-gray: #88829A;
+	--light-gray: #A59EBC;
+	--white: #F7F4FD;
+	--red: #F43072;
+	--orange: #FF7B62;
+}
+
+.bg-black {
+	background-color: var(--black);
+}
+
+.text-black {
+  color: var(--black);
+}
+
+.text-dark-gray {
+  color: var(--dark-gray);
+}
+
+.text-light-gray {
+  color: var(--light-gray);
+}
+
+.bg-white {
+	background-color: var(--white);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-red {
+  color: var(--red);
+}
+
+.text-orange {
+  color: var(--orange);
+}
