@@ -6,3 +6,127 @@
   padding: 230px 0 300px;
   text-align: center;
 }
+
+/* Home Intro */
+.home-intro h5 {
+  margin-bottom: 25px;
+  padding-top: 70px;
+}
+.home-intro_stickies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 -15px;
+  margin-bottom: -280px;
+}
+
+.home-intro_stickies article {
+  width: 252px;
+  height: 237px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.home-intro_stickies article:after {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 16px;
+  background: url('/img/icons/arrow-right.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -26px;
+}
+
+.home-intro_stickies article:nth-child(1) {
+  background-color: #FDD9E5;
+  background-image: url('/img/icons/dots-2x.png');
+}
+.home-intro_stickies article:nth-child(2) {
+  background-color: #FFE7E2;
+  background-image: url('/img/icons/dots-3x.png');
+}
+.home-intro_stickies article:nth-child(3) {
+  background-color: #EEDDE9;
+  background-image: url('/img/icons/dots-4x.png');
+}
+.home-intro_stickies article:nth-child(4) {
+  background-color: #E8DFFA;
+  background-image: url('/img/icons/dots-6x.png');
+}
+.home-intro_stickies article:nth-child(4):after {
+  display: none;
+}
+
+.home-intro_stickies article span {
+  display: block;
+  width: 100%;
+}
+
+/* Home Cases */
+.band.home-cases {
+  padding-top: 337px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.home-cases_list {
+  display: flex;
+  padding-top: 50px;
+}
+
+.home-cases_list--item {
+  margin: 0 15px;
+  background: var(--white);
+  border-radius: 4px;
+  box-shadow: 2px 2px 35px rgba(125, 125, 125, 0.05);
+  transition: all 200ms ease-in;
+}
+
+.home-cases_list--item:hover {
+  transform: translateY(-2.5px);
+  box-shadow: 1px 1px 15px rgba(125, 125, 125, 0.12);
+}
+
+.home-cases_list--item img {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.home-cases_list--item > div {
+  padding: 35px 30px;
+  text-align: left;
+}
+
+.home-cases_list--item .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.home-cases_list--item h4 {
+  margin-bottom: 15px;
+}
+
+.casestudy_tag {
+  padding: 2px 10px;
+  border-radius: 100px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: normal;
+  background: var(--orange);
+  color: var(--white);
+}
