@@ -1,0 +1,76 @@
+form {
+  max-width: 722px;
+  margin: auto;
+  text-align: left;
+}
+
+form .form-row {
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 30px;
+}
+
+form .form-label {
+  flex: 1;
+  margin: 0 15px;
+}
+
+form .form-label.dropdown {
+  position: relative;
+}
+form .form-label.dropdown:after {
+  display: block;
+  content: '';
+  height: 40px;
+  width: 50px;
+  background: #060333;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 3px;
+  background-image: url('/img/icons/arrow-dropdown.svg');
+  background-size: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+form .form-label,
+form .form-label span {
+  display: block;
+}
+
+form .form-label span {
+  padding-left: 5px;
+  margin-bottom: 10px;
+}
+
+form .form-row input,
+form .form-row select,
+form .form-row textarea {
+  display: block;
+  width: 100%;
+  background: #060333;
+  color: var(--white);
+  border: 0;
+  padding: 9px 15px;
+  box-shadow: 2px 2px 25px #050931;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+form .form-row textarea {
+  font-family: "Inter", sans-serif;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.form-row.submit {
+  justify-content: center;
+}
+
+form button.btn.full {
+  padding-left: 95px;
+  padding-right: 95px;
+}

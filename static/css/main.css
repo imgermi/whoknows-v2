@@ -2,8 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap');
 
-@import "colors.css";
-@import "type.css";
+@import "general/colors.css";
+@import "general/type.css";
+@import "general/forms.css";
 @import "pages/home.css";
 @import "partials/header.css";
 @import "partials/footer.css";
@@ -59,13 +60,15 @@ body {
 	.btn.full {
 		background: var(--red);
 		color: var(--white);
+		border: 0;
 	}
 
 .btn-link {
 	text-decoration: underline;
 	font-weight: 700;
 	color: var(--red);
-	transition: all 200ms ease-in
+	transition: all 200ms ease-in;
+	display: inline-block;
 }
 .btn-link:hover {
 	color: var(--dark-gray)
