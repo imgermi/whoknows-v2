@@ -4,16 +4,24 @@ form {
   text-align: left;
 }
 
-form .form-row {
-  display: flex;
-  margin-left: -15px;
-  margin-right: -15px;
-  margin-bottom: 30px;
+@media(min-width: 768px) {
+  form .form-row {
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
 }
 
 form .form-label {
   flex: 1;
-  margin: 0 15px;
+  margin-bottom: 20px;
+}
+@media(min-width: 768px) {
+  form .form-label {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+  }
 }
 
 form .form-label.dropdown {
@@ -64,10 +72,13 @@ form .form-row textarea {
   font-family: "Inter", sans-serif;
   padding-top: 15px;
   padding-bottom: 15px;
+  resize: vertical;
 }
 
 .form-row.submit {
   justify-content: center;
+  text-align: center;
+  padding-top: 10px;
 }
 
 form button.btn.full {

@@ -22,16 +22,30 @@
 body {
 	background: #fff;
 	font-family: "Ubuntu", sans-serif;
-	font-size: 16px;
 	font-weight: 400;
 	color: var(--black);
 	letter-spacing: -0.3px;
+	font-size: 16px;
+}
+@media(max-width: 991px) {
+	body {
+		font-size: 14px;
+	}
 }
 
 .container {
-	max-width: 1098px;
 	margin: auto;
 	padding: 0 15px;
+}
+@media(min-width: 992px) {
+	.container {
+		max-width: 890px;
+	}
+}
+@media(min-width: 1200px) {
+	.container {
+		max-width: 1098px;
+	}
 }
 
 .band {
@@ -60,7 +74,20 @@ body {
 	.btn.full {
 		background: var(--red);
 		color: var(--white);
-		border: 0;
+		border: 1px solid var(--red);
+		cursor: pointer;
+	}
+	.btn.full:hover {
+		background: transparent;
+		color: var(--red);
+	}
+	.btn.full:hover,
+	.btn.outlined:hover {
+		transform: translateY(-1px);
+	}
+	.btn.full:active,
+	.btn.outlined:active {
+		transform: translateY(1px);
 	}
 
 .btn-link {

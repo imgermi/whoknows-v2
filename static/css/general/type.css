@@ -15,6 +15,11 @@
 	font-size: 1em;
 	line-height: 140%;
 }
+@media(max-width: 991px) {
+	.text-base {
+		font-size: 1.1em;
+	}
+}
 
 .text-lg {
 	font-size: 1.25em;

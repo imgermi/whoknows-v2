@@ -6,9 +6,24 @@ footer .container {
   padding-top: 70px;
   padding-bottom: 70px;
   border-top: 1px solid #55537B;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  text-align: center;
+}
+@media(min-width: 768px) {
+  footer .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+
+footer .brand {
+  margin-bottom: 35px;
+}
+@media(min-width: 768px) {
+  footer .brand {
+    margin-bottom: 0;
+  }
 }
 
 footer .brand p {
