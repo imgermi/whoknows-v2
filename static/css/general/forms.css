@@ -27,7 +27,7 @@ form .form-label {
 form .form-label.dropdown {
   position: relative;
 }
-form .form-label.dropdown:after {
+/* form .form-label.dropdown:after {
   display: block;
   content: '';
   height: 40px;
@@ -42,7 +42,7 @@ form .form-label.dropdown:after {
   background-position: center center;
   background-repeat: no-repeat;
   pointer-events: none;
-}
+} */
 
 form .form-label,
 form .form-label span {
