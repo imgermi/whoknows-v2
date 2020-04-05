@@ -170,14 +170,17 @@
       <h3 class="text-4xl text-white">Enough about the "who knows”</h3>
       <p class="text-xl text-light-gray text-section-sub">Now it's your turn. Tell us a little bit about your company or project. If we think we can help you somehow, we'll reach out to schedule a discovery call.</p>
       <form name="contact" method="POST" data-netlify="true" id="contactForm">
+        <p class="hidden">
+          <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+        </p>
         <div class="form-row">
-          <label for="email" class="form-label">
-            <span class="text-base text-white">Email*</span>
-            <input type="email" name="email" id="email" placeholder="name@email.com">
-          </label>
           <label for="name" class="form-label">
             <span class="text-base text-white">Name*</span>
             <input type="text" name="name" id="name" placeholder="Laura">
+          </label>
+          <label for="email" class="form-label">
+            <span class="text-base text-white">Email*</span>
+            <input type="email" name="email" id="email" placeholder="name@email.com">
           </label>
         </div>
         <div class="form-row">

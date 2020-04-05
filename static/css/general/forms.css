@@ -4,6 +4,10 @@ form {
   text-align: left;
 }
 
+form .hidden {
+  display: none;
+}
+
 @media(min-width: 768px) {
   form .form-row {
     display: flex;
