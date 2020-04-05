@@ -7,3 +7,18 @@ header {
     vertical-align: middle;
     justify-content: space-between;
   }
+
+  @media(max-width: 480px) {
+    header .container {
+      display: block;
+      text-align: center;
+    }
+    header img {
+      width: 150px;
+      margin: 0 auto 15px;
+    }
+    header img,
+    header a {
+      display: block;
+    }
+  }
